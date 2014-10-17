@@ -1,9 +1,5 @@
 class Minefield
-  DEFAULT_FIELD = %q(*...
-                     ....
-                     ..*.
-                     ....)
-  def initialize(field=DEFAULT_FIELD)
+  def initialize(field)
     @field = field
   end
 
