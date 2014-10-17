@@ -20,7 +20,7 @@ describe Minefield do
       end
 
       it "is pretty good at counting!" do
-        expect(subject).to eq(processed_field)
+        expect(subject).to eq(processed_field.gsub(/ +/, ''))
       end
     end
 
@@ -40,7 +40,7 @@ describe Minefield do
 
       it "can count all the way to 3!" do
         pending
-        expect(subject).to eq(processed_field)
+        expect(subject).to eq(processed_field.gsub(/ +/, ''))
       end
     end
   end
